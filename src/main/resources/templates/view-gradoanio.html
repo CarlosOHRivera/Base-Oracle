@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grado Anio</title>
+</head>
+<body>
+<div>
+    <Form th:Action="@{/gradoanio/guardar}" th:object="${formgradoanio}" method="post">
+        <div>
+            <label>Grado :</label>
+            <input type="text" th:field="*{llave.grado}"/>
+        </div>
+        <div>
+            <label>Año :</label>
+            <input type="text" th:field="*{llave.anio}"/>
+        </div>
+        <div>
+            <label>Profesor :</label>
+            <input type="text" th:field="*{profesor}"/>
+        </div>
+        <div>
+            <button type="submit">Guardar</button>
+        </div>
+
+    </Form>
+
+</div>
+
+</body>
+</html>

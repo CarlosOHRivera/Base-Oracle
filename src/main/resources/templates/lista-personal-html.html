@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lista Personal</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Año</th>
+        <th>Mes</th>
+        <th>Nombre</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="per:${personal}">
+        <th th:text="${per.llave.mes}"> </th>
+        <th th:text="${per.llave.anio}"></th>
+        <th th:text="${per.nombre}"></th>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

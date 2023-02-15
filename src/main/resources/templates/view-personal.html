@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <form th:action="@{/personal/guardar}" th:object="${personal}" method="post">
+        <div>
+            <label>mes:</label>
+            <input type="text" th:field="*{llave.mes}"/>
+        </div>
+        <div>
+            <label>Año:</label>
+            <input type="text" th:field="*{llave.anio}"/>
+        </div>
+        <div>
+            <label>Name:</label>
+            <input type="text" th:field="*{nombre}"/>
+        </div>
+        <button type="submit">Save</button>
+    </form>
+
+</div>
+</body>
+</html>

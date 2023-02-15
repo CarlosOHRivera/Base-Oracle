@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th scope="col">Grado</th>
+        <th scope="col">Año</th>
+        <th scope="col">Profesor</th>
+    </tr>
+    <tr th:each="grado : ${gradoanioobj}">
+        <td th:text = "${grado.llave.grado}" > </td>
+        <td th:text ="${grado.llave.anio}"></td>
+        <td th:text ="${grado.profesor}"></td>
+    </tr>
+
+    </tr>
+</table>
+</body>
+</html>
